@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Prediction</title>
+</head>
+<body bgcolor="pink">
+    <form action="/out" method="post">
+        <h4>Age</h4>
+        <input type="number" name="Age" required>
+        
+        <h4>Gender</h4>
+        <input type="radio" name="Gender" value="Male" required> Male
+        <input type="radio" name="Gender" value="Female" required> Female
+        <input type="radio" name="Gender" value="Other" required> Other
+        
+        <h4>Are you self-employed?</h4>
+        <input type="radio" name="self_employed" value="Yes" required> Yes
+        <input type="radio" name="self_employed" value="No" required> No
+
+        <h4>Family History of Mental Health Issues</h4>
+        <input type="radio" name="family_history" value="Yes" required> Yes
+        <input type="radio" name="family_history" value="No" required> No
+
+        <h4>Work Interference Due to Mental Health</h4>
+        <select name="work_interfere" required>
+            <option value="Often">Often</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Never">Never</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+
+        <h4>Number of Employees in the Company</h4>
+        <input type="number" name="no_employees" required>
+        
+        <h4>Remote Work</h4>
+        <input type="radio" name="remote_work" value="Yes" required> Yes
+        <input type="radio" name="remote_work" value="No" required> No
+
+        <h4>Is the company primarily a tech company?</h4>
+        <input type="radio" name="tech_company" value="Yes" required> Yes
+        <input type="radio" name="tech_company" value="No" required> No
+
+        <h4>Does the company offer mental health benefits?</h4>
+        <input type="radio" name="benefits" value="Yes" required> Yes
+        <input type="radio" name="benefits" value="No" required> No
+
+        <h4>Do you know the options for mental health care benefits provided by the employer?</h4>
+        <input type="radio" name="care_options" value="Yes" required> Yes
+        <input type="radio" name="care_options" value="No" required> No
+
+        <h4>Does the company have a wellness program?</h4>
+        <input type="radio" name="wellness_program" value="Yes" required> Yes
+        <input type="radio" name="wellness_program" value="No" required> No
+
+        <h4>Do you feel comfortable discussing a mental health issue with your coworkers?</h4>
+        <input type="radio" name="seek_help" value="Yes" required> Yes
+        <input type="radio" name="seek_help" value="No" required> No
+
+        <h4>Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources?</h4>
+        <input type="radio" name="anonymity" value="Yes" required> Yes
+        <input type="radio" name="anonymity" value="No" required> No
+
+        <h4>How easy is it for you to take medical leave for a mental health condition?</h4>
+        <select name="Leave" required>
+            <option value="Very easy">Very easy</option>
+            <option value="Somewhat easy">Somewhat easy</option>
+            <option value="Somewhat difficult">Somewhat difficult</option>
+            <option value="Very difficult">Very difficult</option>
+            <option value="I don't know">I don't know</option>
+        </select>
+
+        <h4>Do you think that discussing a mental health issue with your employer would have negative consequences?</h4>
+        <select name="mental_health_consequence" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select>
+
+        <h4>Do you think that discussing a physical health issue with your employer would have negative consequences?</h4>
+        <select name="phys_health_consequence" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select>
+
+        <h4>Would you be willing to discuss a mental health issue with your coworkers?</h4>
+        <select name="coworkers" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select>
+
+        <h4>Would you be willing to discuss a mental health issue with your direct supervisors?</h4>
+        <select name="supervisor" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select>
+
+        <h4>Would you bring up a mental health issue with a potential employer in an interview?</h4>
+        <select name="mental_health_interview" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select>
+
+        <h4>Would you bring up a physical health issue with a potential employer in an interview?</h4>
+        <select name="phys_health_interview" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select>
+
+        <h4>Do you feel that your employers take mental health as seriously as physical health?</h4>
+        <select name="mental_vs_physical" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="I don't know">I don't know</option>
+        </select>
+
+        <h4>Do you feel that discussing a mental health issue in an interview would hurt your chances of getting the job?</h4>
+        <select name="obs_consequence" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select>
+
+        <h1><button type="submit">Predict</button></h1>
+    </form>
+</body>
+</html>
